@@ -12,7 +12,7 @@
        }
     ```
 
-2. vite.config.js
+2. vite.config.ts
     ```
     ...
     build: {
@@ -30,8 +30,9 @@
    }
    
    ```
+
 ## Libraries
-   
+
 1. clsx
 2. modern-normalize
 3. react-icons
@@ -45,7 +46,7 @@
 
 ## Code
 
-1. main.jsx
+1. main.tsx
    ```
       import 'modern-normalize';
    ```
@@ -56,7 +57,6 @@
 5. add reset.css
 6. and add structure folders
 7. add jsconfig.js
-
 
 ## Future features
 
