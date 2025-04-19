@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Tracks, PageNotFound } from 'pages';
+import { Tracks, PageNotFound } from '@/pages';
 
 function App() {
 
