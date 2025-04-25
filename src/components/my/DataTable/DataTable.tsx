@@ -76,17 +76,18 @@ export function DataTable() {
   });
   return (
     <div className="w-full h-screen">
-      <div className="flex items-center py-4">
-        <Input
-          placeholder="Filter title..."
-          value={(table.getColumn('title')?.getFilterValue() as string) ?? ''}
-          onChange={(event) =>
-            table.getColumn('title')?.setFilterValue(event.target.value)
-          }
-          className="max-w-sm"
-        />
+      <div className="flex items-center justify-between py-4 gap-4">
+        <div className="flex items-center gap-2 max-w-sm w-full">
+          <Input
+            placeholder="Filter title..."
+            value={(table.getColumn('title')?.getFilterValue() as string) ?? ''}
+            onChange={(event) =>
+              table.getColumn('title')?.setFilterValue(event.target.value)
+            }
+          />
+          <Button variant="outline">Create</Button>
+        </div>
         <SelectHideColumns table={table} />
-        <Button variant="outline">Create</Button>
       </div>
 
       <div className="rounded-md border">

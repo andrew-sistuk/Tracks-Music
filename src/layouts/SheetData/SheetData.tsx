@@ -9,7 +9,7 @@ import {
   SheetDescription,
   SheetFooter,
   SheetHeader,
-  SheetTitle,
+  SheetTitle, SheetTrigger,
 } from '@/components/ui/sheet';
 
 export function SheetData({ children }: any) {
@@ -17,7 +17,7 @@ export function SheetData({ children }: any) {
     <>
       {children}
       <Sheet>
-        <SheetContent>
+        <SheetContent side="left">
           <SheetHeader>
             <SheetTitle>Edit profile</SheetTitle>
             <SheetDescription>

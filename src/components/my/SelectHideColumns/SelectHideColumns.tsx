@@ -5,7 +5,7 @@ import {
   DropdownMenuTrigger,
 } from 'components/ui/dropdown-menu';
 import { Button } from 'components/ui/button';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Settings } from 'lucide-react';
 import React from 'react';
 import { PropsTable } from '@/types';
 
@@ -14,7 +14,7 @@ export function SelectHideColumns({ table }: PropsTable) {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className="ml-auto">
-          Columns <ChevronDown />
+          <Settings />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

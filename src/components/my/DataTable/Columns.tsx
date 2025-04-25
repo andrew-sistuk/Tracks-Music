@@ -17,6 +17,7 @@ import { Checkbox } from 'components/ui/checkbox';
 import { Avatar, AvatarImage } from 'components/ui/avatar';
 import { AvatarFallback } from '@radix-ui/react-avatar';
 import Logo from '/public/logo.svg';
+import { SheetTrigger } from 'components/ui/sheet';
 
 export const columns: ColumnDef<Item[]>[] = [
   {
